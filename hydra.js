@@ -112,7 +112,7 @@ async function bruteForce(sessionProxy, passwordFile) {
 
 async function main() {
   const baseUrl = "http://10.115.2.4:4280";
-  const passwordFile = "C:/Users/marti/BDDA/SSED/Hydra/password.txt";
+  const passwordFile = "C:/Users/marti/Coding/BDDA/SSED/Hydra/password.txt";
   const dvwa = new DVWASessionProxy(baseUrl);
   await dvwa.setSecurity(SecurityLevel.LOW);
   const foundPassword = await bruteForce(dvwa, passwordFile);
